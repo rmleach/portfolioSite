@@ -1,0 +1,84 @@
+.container {
+  display:flex;
+  /* background-color: hotpink; */
+}
+.header{
+  display:flex;
+  height: 5em;
+  background-color: #9BBEC7;
+}
+
+.logo{
+
+}
+
+.navBar{
+  display: flex;
+}
+.welcome-section {
+  height: 95vh;
+  background-color: #9BBEC7;
+}
+
+.projects{
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+}
+
+.portfolio{
+  height: 100vh;
+  background-color: #A8B7AB
+}
+
+.cardBox {
+  grid-gap: 1em;
+  list-style-type: none;
+  align-content: center;
+  padding-inline-start: 0px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  height: 15em;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front>img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: white;
+  color: purple;
+  transform: rotateY(180deg);
+  width: 100%;
+}
+
+h1{
+  color: rgba(71, 47, 15, 0.616);
+}
