@@ -1,29 +1,55 @@
 .container {
-  display:flex;
+  /* display:flex; */
+  /* height:  100%; */
   /* background-color: hotpink; */
 }
 .header{
   display:flex;
   height: 5em;
+  width: 100em;
   background-color: #9BBEC7;
+  position: fixed;
+  top:0;
+  opacity: .8;
+  z-index: 1;
 }
 
 .logo{
-
 }
 
 .navBar{
-  display: flex;
 }
-.welcome-section {
+.welcome-section-parallax {
   height: 95vh;
   background-color: #9BBEC7;
+  background-image: url("craterlake.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
 .projects{
   height: 100vh;
   background-color: white;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .portfolio{
