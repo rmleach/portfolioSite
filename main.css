@@ -1,12 +1,17 @@
+html,body{
+  width: 100%;
+  margin: 0px;
+}
 .container {
   /* display:flex; */
   /* height:  100%; */
-  /* background-color: hotpink; */
+  /* background-color: #9BBEC7; */
+  /* width: 100%; */
 }
 .header{
   display:flex;
   height: 5em;
-  width: 100em;
+  width: 100%;
   background-color: #9BBEC7;
   position: fixed;
   top:0;
@@ -14,19 +19,61 @@
   z-index: 1;
 }
 
+.section{
+  font-size: 1.5em;
+  color: #F26419;
+  text-align: center;
+  padding: 1em;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
 .logo{
 }
 
 .navBar{
+  float: right;
+  width: 100%;
+  height: 100%;
 }
-.welcome-section-parallax {
-  height: 95vh;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9BBEC7;
+  height:100%
+}
+
+li {
+  float: right;
+  justify-content: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #0A2342;
+}
+
+.welcome-section{
+  height: 100vh;
+  width: 100%;
   background-color: #9BBEC7;
   background-image: url("craterlake.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  top: 0;
 }
 
 .caption{
@@ -35,39 +82,58 @@
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: black;
 }
 
 .caption span.border {
-  background-color: #111;
+  background-color: black;
   color: #fff;
-  padding: 18px;
-  font-size: 25px;
+  padding: 16px;
+  font-size: 1em;
   letter-spacing: 10px;
 }
+
+.about-me{
+  padding: 2em;
+  text-align: center;
+  font-size: 1.5em;
+}
+.headshot {
+  height: 100vh;
+  background-image: url("headshot.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .projects{
   height: 100vh;
   background-color: white;
-  /* z-index: 1; */
 }
 
 .portfolio{
   height: 100vh;
-  background-color: #A8B7AB
+  background-color: #33658A;
+  margin-block-start: 0;
 }
 
-.cardBox {
-  grid-gap: 1em;
+/* .cardBox {
+  height: 100%;
   list-style-type: none;
   align-content: center;
   padding-inline-start: 0px;
-}
+  padding:1em;
+} */
 
+.flip-card{
+  height: 27vh;
+  margin: 1em;
+}
 
 .flip-card-inner {
   position: relative;
-  height: 15em;
+  height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -94,17 +160,22 @@
 
 .flip-card-front>img {
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* Style the back side */
 .flip-card-back {
-  background: white;
+  background: #33658A;
   color: purple;
   transform: rotateY(180deg);
   width: 100%;
 }
 
+.footer{
+  background-color: #0A2342;
+  height: 5vh;
+}
+
 h1{
-  color: rgba(71, 47, 15, 0.616);
+  color: #F6AE2D;
 }
