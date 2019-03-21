@@ -1,22 +1,17 @@
 html,body{
   width: 100%;
   margin: 0px;
-}
-.container {
-  /* display:flex; */
-  /* height:  100%; */
-  /* background-color: #9BBEC7; */
-  /* width: 100%; */
+  background-color: #9BBEC7;
 }
 
 .header{
   display:flex;
-  height: 5em;
-  width: 100%;
+  height: 4em;
+  width: 100vw;
   background-color: #9BBEC7;
   position: fixed;
   top:0;
-  opacity: .8;
+  opacity: .9;
   z-index: 1;
 }
 
@@ -27,17 +22,18 @@ html,body{
   color: #F26419;
   text-align: center;
   padding: 1em;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin: 0px 12px;
 }
 
 .logo{
+  height: 12vh;
+  width: 12vh;
 }
 
 .navBar{
   float: right;
-  width: 100%;
   height: 100%;
+  width: auto;
 }
 
 ul {
@@ -46,7 +42,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #9BBEC7;
-  height:100%
 }
 
 li {
@@ -60,10 +55,10 @@ li a {
   monospace;
   display: block;
   color: white;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 1em 1em;
+  font-size: 1.2em;
+  padding: 15px;
   text-decoration: none;
+  margin-top: 5px;
 
 }
 
@@ -78,11 +73,11 @@ li img{
 
 .welcome-section{
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   background-color: #9BBEC7;
-  background-image: url("craterlake.jpg");
+  background-image: url("assets/craterlake.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -91,7 +86,7 @@ li img{
 .caption{
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: black;
@@ -102,9 +97,9 @@ li img{
   cursive;
   background-color: black;
   color: #fff;
-  padding: 16px;
-  font-size: 1em;
-  letter-spacing: 10px;
+  padding: 14px;
+  font-size: .8em;
+  letter-spacing: 8px;
 }
 
 .about-me{
@@ -112,24 +107,19 @@ li img{
   text-align: center;
   font-size: 1.5em;
 }
+
 .headshot {
   height: 100vh;
-  background-image: url("headshot.jpg");
+  background-image: url("assets/headshot.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 .projects{
   height: 100vh;
   background-color: white;
-}
-
-.portfolio{
-  height: 100vh;
-  background-color: #33658A;
-  margin-block-start: 0;
+  overflow: overlay;
 }
 
 
@@ -150,7 +140,6 @@ li img{
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -159,7 +148,6 @@ li img{
   width: 100%;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
   color: black;
@@ -167,10 +155,8 @@ li img{
 
 .flip-card-front>img {
   height: 100%;
-  /* width: 100%; */
 }
 
-/* Style the back side */
 .flip-card-back {
   background: #9BBEC7;
   color: purple;
@@ -180,29 +166,60 @@ li img{
 
 .codeImg {
   height: 100vh;
-  background-image: url("code.png");
+  background-image: url("assets/Code.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.linkBox{
-  align-content: center;
-  margin-block-end: 0;
+.portfolio {
+  position: absolute;
+  height: 100vh;
+  background-color: #33658A;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+
+.contact {
+  position: absolute;
+  top: 30px;
+  margin-top: 40px;
+  z-index: 2;
+  height: 30vh;
+  width: auto;
+}
+
+.info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: .9em;
+  font-family: 'IBM Plex Mono'
 }
 
 .footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: #0A2342;
   height: 5vh;
+  width: 100vw;
+  align-items: center;
 }
 
 .footer > span{
   font-family: 'IBM Plex Mono',
   monospace;
   float: right;
-  color: #F26419
+  color: #F26419;
+  padding: .5em;
 }
 
 h1{
-  color: #F6AE2D;
+  color: #F26419;
+  position: relative;
 }
